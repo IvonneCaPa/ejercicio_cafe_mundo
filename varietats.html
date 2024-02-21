@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ivonne">
+    <meta name="description" content="Información sobre el café">
+    <meta name="keywords" content="cafe, aromático, tostado, molido, espresso, barista, cafetería, descafeinado, latte, cappuccino, plantación, grano, cafetera, filtro, tueste">
+    <meta name="copyright" content="Ivonne">
+    <title>Cafés del Món</title>
+    <link rel="stylesheet" href="css/varietat.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <picture>
+            <source srcset="img/index_500px.avif" media="(max-width:500px)">
+            <source srcset="img/index_800px.avif" media="(max-width:800px)">
+            <source srcset="img/index_1400px.avif" media="(max-width:1400)">
+            <img src="img/index_2000px.avif"  title="Cafes del Món" alt="granos de café con cafetera turca">
+        </picture>
+        <h1>Cafés del Món</h1>
+    </header>
+    <nav>
+        <ul class="nav-ul width-content">
+            <li><a href="index.html">Inici</a></li>
+            <li><a href="varietats.html">varietats</a></li>
+            <li><a href="botiga.html">Botiga</a></li>
+            <li><a href="nosoltres.html">Sobre nosoltres</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <article>
+                <div>
+                    <img src="img/arabig.avif" alt="">
+                </div>
+                <div>
+                    <dialog id="modal">
+                        <h2>Esto es un ejemplo de ventana modal</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, impedit possimus! Sed tempore ex odio consequatur hic est labore harum.</p>
+                        <button id="cerrar">Cerrar Ventana</button>
+                      </dialog>
+                      <button id="abrir">Café Arabig</button>
+                      <script>
+                        window.abrir.addEventListener('click',()=>{window.modal.showModal()})
+                        window.cerrar.addEventListener('click',()=>{window.modal.close()})
+                      </script>
+                </div>
+            </article>
+
+        </section>
+    </main>
+    <footer>
+        <div class="footer-div ancho">
+            <div class="contacto">
+                <h3>contacte</h3>
+                <a href="mailto:info@cafesdelmon.com" target="_blank">info@cafesdelmon.com</a>
+                <div>
+                    <a href="#" target="_blank"><img class="ico" src="logos/facebook.png" alt="Logo de facebook"></a>
+                    <a href="#" target="_blank"><img  class="ico"  src="logos/twitter.png" alt="logo de twitter"></a>
+                    <a href="#" target="_blank"><img  class="ico"  src="logos/instagram.png" alt="logo de instagram"></a>               
+                </div>
+            </div>
+            <div class="contacto">
+                <h3>enllaços útils</h3>
+                <a href="#">Notícies de premsa</a>
+                <a href="#">Els nostres productes</a>
+                <a href="#">Plans per a empresa</a>
+                <a href="#">Afiliats</a>
+            </div>
+            <div class="contacto">
+                <h3>Comprar</h3>
+                <a href="#">Particulars</a>
+                <a href="#">Empreses</a>
+                <a href="#">subscripcions</a>
+            </div>
+            <div class="contacto">
+                <h3>Conéixer el cafe</h3>
+                <a href="#">Videos</a>
+            </div>
+            <div class="contacto">
+                <h3>Ajuda</h3>
+                <a href="#">Preguntes freqüents</a>
+                <a href="#">Devolucions</a>
+                <a href="#">Servei Tècnic</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

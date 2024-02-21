@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;  
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+:root {
+    --color-back:#053617;
+    --width-content: 1200px;
+    --font-titles:"Dancing Script", Courier, monospace;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header img{
+    width: 100%;
+
+}
+
+.ancho{
+    width:var(--width-content);
+    margin: 0 auto;
+}
+
+.width-content {
+    max-width : var(--width-content);
+    margin: 0 auto;
+}
+
+h1{
+    font-family: var(--font-titles);
+    font-size: 8vw;
+    position: absolute;
+    top: 13%;
+    left: 55%;
+    color: white;
+}
+
+h2{
+    font-family: var(--font-titles);
+    font-size: 2rem;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+/* +++++++++++++++++++++++ MENU +++++++++++++++++++++++++++++++++++ */
+nav{
+    position: sticky;
+    top: 0;
+    margin-top: -5px;
+    background-color: var(--color-back);
+    z-index: 2;
+    
+}
+
+.nav-ul {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 4px solid var(--color-back);
+    border-top: 4px solid var(--color-back);
+    padding: 6px;
+}
+.nav-ul > li{
+    list-style: none;
+    padding: 6px;
+}
+
+.nav-ul > li > a:hover{
+    text-decoration: overline;
+}
+/* *************************************** SECCIONES *************************** */
+.wid-article {
+    display: flex;
+    align-items: center;
+}
+
+.wid-article > img {
+    max-width: 50%;
+}
+
+.wid-article > video {
+    max-width: 50%;
+}
+
+.wid-article > div{
+    padding:16px;
+}
+
+.fondo-seccion{
+    background: var(--color-back);
+}
+
+.color-texto > h2{
+    color: white;
+}
+
+.color-texto > p{
+    color: white;
+}
+
+/* ***************************** OPINIONES CLIENTES ***************************** */
+.opinion-div {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+}
+
+.opinion-div > article{
+    width: 32%;
+}
+
+blockquote{
+    font-style: oblique;
+}
+
+cite{
+    color: red;
+    display: flex;
+    justify-content: end;
+}
+
+section > h2 {
+    text-align: center;
+}
+
+.pading-opiniones{
+    padding-top: 20px;
+}
+/* ********************************  FOOTER ****************************** */
+footer{
+    background-color:var(--color-back);
+    width: 100%;
+    color: white;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+.footer-div{
+    display: flex;
+    justify-content:space-evenly;
+}
+
+.footer-div > div {
+    width: 20%;
+}
+
+.ico {
+    width: 12%;
+}
+
+.contacto{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
